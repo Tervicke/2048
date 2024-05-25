@@ -4,5 +4,5 @@ simply do a make
 ```bash
 make
 ```
-["screenshot"](screenshot.png)
+![screenshot](screenshot.png)
 

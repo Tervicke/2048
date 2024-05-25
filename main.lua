@@ -18,25 +18,27 @@ function love.load()
 end
 
 function love.keypressed(key)
-	if key == "up" or key == "w" then
-		gameBoard = rotateTable()
-		leftShift()
-		gameBoard = rotateTable()	
-		addElement()
-	end
-	if key == "down" or key == "s" then
-		gameBoard = rotateTable()
-		rightShift()
-		gameBoard = rotateTable()	
-		addElement()
-	end
-	if key == "left" or key == "a" then
-		leftShift()
-		addElement()
-	end
-	if key == "right" or key == "d" then
-		rightShift()
-		addElement()
+	if not gameOver then
+		if key == "up" or key == "w" then
+			gameBoard = rotateTable()
+			leftShift()
+			gameBoard = rotateTable()	
+			addElement()
+		end
+		if key == "down" or key == "s" then
+			gameBoard = rotateTable()
+			rightShift()
+			gameBoard = rotateTable()	
+			addElement()
+		end
+		if key == "left" or key == "a" then
+			leftShift()
+			addElement()
+		end
+		if key == "right" or key == "d" then
+			rightShift()
+			addElement()
+		end
 	end
 end
 
